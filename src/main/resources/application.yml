@@ -6,7 +6,10 @@ keycloak:
   resource: login-app
   public-client: true
   principal-attribute: preferred_username
-  security-constraints[0]:
-    authRoles[0]: user
-    securityCollections[0]:
-      patterns[0]: /customers/*
+#  security-constraints[0]:
+#    authRoles[0]: user
+#    securityCollections[0]:
+#      patterns[0]: /customers/*
+spring:
+  main:
+    allow-circular-references: true
